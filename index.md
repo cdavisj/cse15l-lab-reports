@@ -5,4 +5,5 @@ This is some sample content for my webpage. Here is a [link](other.html) to my o
 ## Hobbies:
 1. Making coffee
 2. Learning programming languages (C++, Python, Java, JS, etc.)
-3. Speed cubing
+3. Chess
+4. Speed cubing
