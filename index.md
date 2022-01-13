@@ -8,7 +8,7 @@ This is some sample content for my webpage. Here is a [link](other.html) to my o
 3. Chess
 4. Speed cubing
 
-Here is the famous "Hello, World!" program in 3 different languages:
+## Here is the famous "Hello, World!" program in 3 different languages:
 
 ## Python
 ```python
