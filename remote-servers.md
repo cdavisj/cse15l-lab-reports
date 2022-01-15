@@ -1,5 +1,5 @@
 # Remote Servers
-A remote server is essentially just a computer located somewhere else, such as a work site. You can connect to such a server to do remote work from home using something called [ssh](https://en.wikipedia.org/wiki/Secure_Shell), standing for *secure shell*. Let us start with how to do this.
+ If you ended up here by mistake, you can return to the home page by clicking [here](index.html). A remote server is essentially just a computer located somewhere else, such as a work site. You can connect to such a server to do remote work from home using something called [ssh](https://en.wikipedia.org/wiki/Secure_Shell), standing for *secure shell*. Let us start with how to do this.
 
 ## Connecting to a server via ssh
 Let it be known, this lesson is in the context of connecting to UCSD's ieng6 server as a student. 
