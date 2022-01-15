@@ -41,6 +41,7 @@ The underscores will be replaced by your unique number. Furthermore, depending o
 Once you've run this command, you will be prompted to confirm that you want to connect, at which you can just say "yes". As long as this is a trusted server. You will then need to enter the password corresponding to your school login.
 
 You should see an output similar to this.
+
 ![login](images/login.png)
 
 Congratulations, you are officially connected to the remote server! The next thing to do is try out some commands.
@@ -50,15 +51,19 @@ Congratulations, you are officially connected to the remote server! The next thi
 Now to try some commands on the server. The first commands you can try are `ls` (list directory) and `cd <folder-name>` (change directory).
 
 Firstly, try `ls` to see what the starter directory is looking like.
+
 ![ls command](images/ls.png)
 
 Your directory is going to look slightly different from this one, but you should see some files and/or folders listed. One more thing to know, you won't see all files and folder when you use `ls` on its own. By default, there are going to be some hidden files. In order to see everything hidden as well, you can add the `-a` or `-all` argument with the `ls` command. They both do the same thing so take your pick!
+
 ![ls -all command](images/ls-all.png)
 
 Now for trying out the `cd` command to change your working directory. In order to leave the default folders alone, we can make a new blank directory/folder to `cd` into. This can be done with the `mkdir <folder-name>` (make directory) command. Once you create a new directory, you can check that it was created properly by again making use of the `ls` command.
+
 ![mkdir command](images/mkdir.png)
 
 As we can see, a new folder was successfully created! Now we can go ahead and `cd` into this new folder. One nice shortcut to keep in mind, is you can press the tab key after typing the first few letters for autocomplete finish the folder name for you. Once you are in the new directory, you can verify the current folder you are in by typing the `pwd` (print working directory) command.
+
 ![mkdir command](images/cd.png)
 
 Another useful command argument for `cd` to keep in mine is the `..` as a directory. This is universally known as "go back one folder". If you would like to go back to the default working directory you can do that as such..
@@ -71,12 +76,15 @@ Now that you know how to move around the directories, you should know how to cop
 To do this, you will need to open a new PowerShell instance, or press `ctrl+D` to exit the server on your current one. Let us create a simple text file to move over to the server. You can do this by simply navigating to the current folder on your computer via the file explorer, and creating a new text file with the windows UI. Put some simple text in the new file, then save and exit. For the example, I will create a file called `Welcome.txt` and enter the text `Welcome to the server!`.
 
 As we can see the file is showing up when we list it out in our directory, so we are ready to copy!
+
 ![file to move](images/file-to-move.png)
 
 Now we can use the `scp` command in conjunction with `ssh` to copy this folder over to our server. 
+
 ![scp](images/scp.png)
 
 Once you see 100% on the status, this means the folder is successfully copied over. Now can connect back to the server and check on our file!
+
 ![welcome](images/welcome.png)
 
 To look into the contents of the file, we can use a command line text editor called `vim` (Vi improved). Simply type `vim <file-name>` to open up the file in vim.
@@ -119,6 +127,7 @@ In one command, I can move this file over to the server, compile it with `javac`
 scp /Remote/WhereAmI.java cs15lwi22aie@ieng6.ucsd.edu:~/; ssh cs15lwi22aie@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"
 ```
 This should look as such.
+
 ![optimizing workflow](images/optimizing-workflow.png)
 
 Some notes to help you understand this command. You can break commands up in the command line with semicolons (;). So each time I put a semicolon, I can put a new command afterwards that I would like to be run immediately after the first. Furthermore, you can wrap all the commands you would like to run on the server, after you `ssh` in, in double-quotes. 
