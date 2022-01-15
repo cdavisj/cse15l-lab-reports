@@ -3,7 +3,7 @@ This page is going to be a log of all of the different things learned in CSE 15L
 
 | Lesson | Description |
 | ------------ | ------------ |
-| [Remote Servers](remote-servers.md) | This lesson covers how to connect to a remote server.
+| [Remote Servers](remote-servers.md) | This lesson covers how to connect to a remote server. |
 
 ## Commands
 | Command | Description |

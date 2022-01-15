@@ -62,6 +62,7 @@ As we can see, a new folder was successfully created! Now we can go ahead and `c
 ![mkdir command](images/cd.png)
 
 Another useful command argument for `cd` to keep in mine is the `..` as a directory. This is universally known as "go back one folder". If you would like to go back to the default working directory you can do that as such..
+
 ![mkdir command](images/cd...png)
 
 ### Copying files from your computer to the server
