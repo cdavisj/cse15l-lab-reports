@@ -4,3 +4,18 @@ This page is going to be a log of all of the different things learned in CSE 15L
 | Lesson | Description |
 | ------------ | ------------ |
 | [Remote Servers](remote-servers.md) | This lesson covers how to connect to a remote server.
+
+## Commands
+| Command | Description |
+| ------------ | ------------ |
+| `ssh username@servername` | Connect to server |
+| `scp username@servername` | Secure copy to server |
+| `ctrl+D` | Leave server |
+| `ls` | List files |
+| `ls -all` | List all files |
+| `cd <directory>` | Go to directory |
+| `cd ..` | Go back one directory |
+| `mkdir <directory>` | Create directory |
+| `rmdir <directory>` | Remove directory |
+| `vim <file>` | Open file in vim |
+| `:q` | Quit vim |
