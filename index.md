@@ -1,3 +1,7 @@
+---
+layout: home
+---
+
 # Welcome!
 This page is going to be a log of all of the different things learned in CSE 15L. For the sake of refer to the table below for lessons.
 
