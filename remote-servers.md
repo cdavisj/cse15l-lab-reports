@@ -2,7 +2,7 @@
 
 First thing to do before working on a remote server is to set up vscode for development. This will improve likely improve your workflow since you can code locally while working from the remote server via the vscode integrated terminal. To get vscode, follow [this](https://code.visualstudio.com/Download) link to their official site and follow their instructions. Once you have it downloaded, you should be able to see a window similar to the following one.
 
-![vscode-open](vscode-open.png)
+![vscode-open](images/vscode-open.png)
 
 Keep in mine, I have a theme installed here called Palenight High Constrast from the Material theme pack. Furthermore, you will see a welcome page with some useful information abou vscode. If you don't want to see this on startup everytime, make sure to uncheck the box for show on startup.
 
