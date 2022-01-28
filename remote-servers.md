@@ -4,7 +4,7 @@ First thing to do before working on a remote server is to set up vscode for deve
 
 ![vscode-open](images/vscode-open.png)
 
-Keep in mind, I have a theme installed here called Palenight High Constrast from the Material theme pack. Furthermore, you will see a welcome page with some useful information about vscode. If you don't want to see this on startup everytime, make sure to uncheck the box for "Show welcome page on startup".
+Keep in mind, I have a theme installed here called Palenight High Contrast from the Material theme pack. Furthermore, you will see a welcome page with some useful information about vscode. If you don't want to see this on startup everytime, make sure to uncheck the box for "Show welcome page on startup".
 
 # Remote Servers
 
