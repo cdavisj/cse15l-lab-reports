@@ -1,5 +1,5 @@
 # Troubleshooting Markdown Parser
-The starter code from this project was produced in [this](https://www.youtube.com/watch?v=_y9hkrN9k3w) video. This produced the following starter code.
+If you joined here by mistake, or would like to return to the home page, click [here](index.html).The starter code from this project was produced in [this](https://www.youtube.com/watch?v=_y9hkrN9k3w) video. This produced the following starter code.
 
 ```java
 // File reading code from https://howtodoinjava.com/java/io/java-read-file-to-string-examples/
