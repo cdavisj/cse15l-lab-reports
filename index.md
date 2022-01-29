@@ -2,12 +2,14 @@
 This page is going to be a log of all of the different things learned in CSE 15L. For the sake of refer to the table below for lessons.
 
 ## Lessons
+
 | Lesson | Description |
 | ------------ | ------------ |
 | [Remote Servers](remote-servers.html) | This lesson covers how to connect to a remote server. |
 | [Markdown Parse Debugging](markdown-parse-debugging.html) | Covers the debugging process on the markdown parser java program. |
 
 ## Commands
+
 | Command | Description |
 | ------------ | ------------ |
 | `ssh username@servername` | Connect to server |

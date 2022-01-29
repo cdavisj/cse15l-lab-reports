@@ -33,13 +33,13 @@ public class MarkdownParse {
 }
 ```
 
-The goal is to parse a markdown file for links. This program, although works for some simple cases, has a issues with addressing any sort of edge cases. In this report, I will go over some of the fixes my lab group came up with.
+The goal is to parse a markdown file for links. This program, although works for some simple cases, has a issues with addressing a lot of different edge cases. In this report, I will go over some of the fixes my lab group came up with.
 
 ## Fix 1
 [comment]: <> (Show a screenshot of the code change diff from Github)
 First thing that we came across was the program failes when the markdown file does not end with a link. This issue seemed to be coming from the program infinitely trying to find more links when `currentIndex` updated after a link and had more content to run the program over, but there were no more links to parse. To fix this issue, we added a simple if statement to check if there are anymore links to parse after we finish each link. This can be seen in the following diff.
 
-![fix-1-diff](fix-1-diff.png)
+![fix-1-diff](images/fix-1-diff.png)
 
 [comment]: <> (Link to the test file for a failure-inducing input that prompted you to make that change)
 We thought to make this change after testing the initial program with the following markdown file.
@@ -52,7 +52,7 @@ text after link with no link after it
 [comment]: <> (Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history))
 The output for this program was 
 
-![fail-1-symptom](fail-1-symptom.png)
+![fail-1-symptom](images/fail-1-symptom.png)
 
 [comment]: <> (Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.)
 After encountering this symptom, we were quickly able to identify that it broke from not having more quotes, but instead other types of content, after a quote. This happened because the `indexOf` method being used could not find more instances of the string `[` when prompted. In this case the method returns `-1` which was not checked for.
