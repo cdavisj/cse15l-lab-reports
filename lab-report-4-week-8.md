@@ -1,5 +1,5 @@
 # Introduction
-Three different tests will be used for two different implementations of the markdown parse program. The two programs being used today are [my groups implementation](https://github.com/cdavisj/markdown-parse) and [another groups implementation](https://github.com/floatboat/markdown-parse) which we reviewed previously. Following is the file snippets in which I will be testing here.
+Three different tests will be used for two different implementations of the markdown parse program. The two programs being used today are [my groups implementation](https://github.com/cdavisj/markdown-parse) and [another groups implementation](https://github.com/floatboat/markdown-parse) which we reviewed previously. Following is the file snippets in which I will be testing here, as well as a rendered preview showing us where links are actually registered based on the markdown language.
 
 ### Snippet 1
 ```
@@ -12,6 +12,10 @@ Three different tests will be used for two different implementations of the mark
 [`code]`](ucsd.edu)
 ```
 
+![snippet 1 preview](images/snippet1-preview.png)
+
+A link is registered for ``google.com`, `google.com`, and `ucsd.edu`.
+
 ### Snippet 2
 ```
 [a [nested link](a.com)](b.com)
@@ -20,6 +24,10 @@ Three different tests will be used for two different implementations of the mark
 
 [some escaped \[ brackets \]](example.com)
 ```
+
+![snippet 2 preview](images/snippet2-preview.png)
+
+A link is registered for `a.com`, `a.com(())`, and `example.com`.
 
 ### Snippet 3
 ```
@@ -48,6 +56,11 @@ And there's still some more text after that.
 
 And then there's more text
 ```
+
+![snippet 3 preview](images/snippet3-preview.png)
+
+A link is registered for `https://www.twitter.com`, `https://ucsd-cse15l-w22.github.io/`, `https://cse.ucsd.edu/`.
+
 ## Results
 ### My Program
 ```
