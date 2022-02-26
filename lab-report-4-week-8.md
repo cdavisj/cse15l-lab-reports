@@ -79,3 +79,30 @@ Tests run: 12,  Failures: 3
 ```
 
 ### Other Program
+```
+There were 3 failures:
+1) testSnippet1(MarkdownParseTest)
+java.lang.AssertionError: expected:<[`google.com, google.com, ucsd.edu]> but was:<[url.com, `google.com, google.com, ucsd.edu]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet1(MarkdownParseTest.java:42)
+2) testSnippet2(MarkdownParseTest)
+java.lang.AssertionError: expected:<[https://www.twitter.com, https://ucsd-cse15l-w22.github.io/, https://cse.ucsd.edu/]> but was:<[a.com, a.com((, example.com]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet2(MarkdownParseTest.java:53)
+3) testSnippet3(MarkdownParseTest)
+java.lang.AssertionError: expected:<[a.com, a.com(()), example.com]> but was:<[, , ]>
+        at org.junit.Assert.fail(Assert.java:89)
+        at org.junit.Assert.failNotEquals(Assert.java:835)
+        at org.junit.Assert.assertEquals(Assert.java:120)
+        at org.junit.Assert.assertEquals(Assert.java:146)
+        at MarkdownParseTest.testSnippet3(MarkdownParseTest.java:64)
+
+FAILURES!!!
+Tests run: 7,  Failures: 3
+```
