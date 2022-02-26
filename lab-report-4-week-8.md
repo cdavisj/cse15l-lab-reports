@@ -14,7 +14,7 @@ Three different tests will be used for two different implementations of the mark
 
 ![snippet 1 preview](images/snippet1-preview.png)
 
-A link is registered for ```google.com``, `google.com`, and `ucsd.edu`.
+A link is registered for `` `google.com``, `google.com`, and `ucsd.edu`.
 
 ### Snippet 2
 ```
