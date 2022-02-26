@@ -198,12 +198,12 @@ FAILURES!!!
 Tests run: 7,  Failures: 3
 ```
 
-# Questions and Answers
-### 1) Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
-### A: Yes! I just need to add an if-statement check for backtick characters and skip over the inline code blocks enclosed. Which it follows that any brackets enclosed in a code block will not count towards the parsing of the a link.
+## Questions and Answers
+#### 1) Do you think there is a small (<10 lines) code change that will make your program work for snippet 1 and all related cases that use inline code with backticks? If yes, describe the code change. If not, describe why it would be a more involved change.
+#### A: Yes! I just need to add an if-statement check for backtick characters and skip over the inline code blocks enclosed. Which it follows that any brackets enclosed in a code block will not count towards the parsing of the a link.
 
-### 2) Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
-### A: This one may be a little more difficult to manage, although it is clear what the issue is. My program does not account for multiple sets of parentheses in the link. I need to account for new open and close parentheses and take all characters up to the final closing parenthesis that actually ties to the opening one for the link. This can potentially be done with a separate stack (or the same if it doesn't confuse things, since my program already uses a stack) to track the parenthesis hierarchy.
+#### 2) Do you think there is a small (<10 lines) code change that will make your program work for snippet 2 and all related cases that nest parentheses, brackets, and escaped brackets? If yes, describe the code change. If not, describe why it would be a more involved change.
+#### A: This one may be a little more difficult to manage, although it is clear what the issue is. My program does not account for multiple sets of parentheses in the link. I need to account for new open and close parentheses and take all characters up to the final closing parenthesis that actually ties to the opening one for the link. This can potentially be done with a separate stack (or the same if it doesn't confuse things, since my program already uses a stack) to track the parenthesis hierarchy.
 
-### 3) Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
-### A: Yes! I believe this issue can be fixed with better link trimming once I believe I have encountered a link. I think I am not trimming outter whitespace and newlines at all in the current version of markdown parse.
+#### 3) Do you think there is a small (<10 lines) code change that will make your program work for snippet 3 and all related cases that have newlines in brackets and parentheses? If yes, describe the code change. If not, describe why it would be a more involved change.
+#### A: Yes! I believe this issue can be fixed with better link trimming once I believe I have encountered a link. I think I am not trimming outter whitespace and newlines at all in the current version of markdown parse.
