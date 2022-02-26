@@ -63,6 +63,9 @@ A link is registered for `https://www.twitter.com`, `https://ucsd-cse15l-w22.git
 
 # Results
 ### My Program
+Source Code: https://github.com/cdavisj/markdown-parse
+
+#### Tests
 ```java
 @Test
 public void testSnippet1() throws IOException, NoSuchFileException {
@@ -98,6 +101,7 @@ public void testSnippet3() throws IOException, NoSuchFileException {
 }
 ```
 
+#### Output
 ```
 There were 3 failures:
 1) testSnippet1(MarkdownParseTest)
@@ -127,6 +131,9 @@ Tests run: 12,  Failures: 3
 ```
 
 ### Other Program
+Source Code: https://github.com/floatboat/markdown-parse
+
+#### Tests
 ```java
 @Test
 public void testSnippet1() throws IOException, NoSuchFileException {
@@ -162,6 +169,7 @@ public void testSnippet3() throws IOException, NoSuchFileException {
 }
 ```
 
+#### Output
 ```
 There were 3 failures:
 1) testSnippet1(MarkdownParseTest)
