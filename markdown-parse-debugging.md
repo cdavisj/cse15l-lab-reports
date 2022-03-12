@@ -63,7 +63,8 @@ After encountering this symptom, we were quickly able to identify that it broke 
 [Here](https://github.com/JessalynWang/markdown-parse/blob/main/Group-test-file4.md?plain=1) is the link to the test file that prompted this change.
 
 [comment]: <> (Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history))
-![fail-2-symptom](images/fail-2.symptom.png)
+
+![fail-2-symptom](images/fail-2-symptom.png)
 
 [comment]: <> (Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.)
 The bug in this case was a little bit different from the first, although it had a similar symptom. The program did not account for use of _escape characters_ which are prededed by a single `/`. So when it looks like we have more links (because there are more `[` to look at), the program does not know how to read which characters are escaped with this `/` and which should be read as apart of the link syntax. The fix we did in this case was thought of by group member Jessalyn Wang, which was to rewrite the logic to use stacks. We realized this is not the only way of doing things, but we thought this would be a nice way of doing it. We added a check for escape characters as well to account for that bug.
@@ -72,8 +73,15 @@ The bug in this case was a little bit different from the first, although it had 
 
 [comment]: <> (Show a screenshot of the code change diff from Github)
 
+![fix-3-diff](images/fix-3-diff.png)
+
 [comment]: <> (Link to the test file for a failure-inducing input that prompted you to make that change)
+
+[Here](https://github.com/JessalynWang/markdown-parse/blob/3e62272e08aef2ffba7abc04994e46bcde165cfc/test-file6.md?plain=1) is the test file that prompted this change.
 
 [comment]: <> (Show the symptom of that failure-inducing input by showing the output of running the file at the command line for the version where it was failing (this should also be in the commit message history))
 
+![fail-3-symptom](images/fail-3-symptom.png)
+
 [comment]: <> (Write 2-3 sentences describing the relationship between the bug, the symptom, and the failure-inducing input.)
+This bug stemmed from taking links without considering there being a `!` before, which would make it an image rather. The failure-inducing input in this case was `test-file-6.md` which contained only a single image and no actual links. The program considered this an a link and added it to the list of links, when it should not, which is the symptom.
