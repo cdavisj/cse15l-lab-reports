@@ -7,7 +7,8 @@ This page is going to be a log of all of the different things learned in CSE 15L
 | ------------ | ------------ |
 | [Remote Servers](remote-servers.html) | This lesson covers how to connect to a remote server. |
 | [Markdown Parse Debugging](markdown-parse-debugging.html) | Covers the debugging process on the markdown parser java program. |
-| [Markdown Parse Snippet Tests](lab-report-4-week-8) | Covers comparison between two different implementations of the markdown parse program, and adds some JUnit tests to run them with. |
+| [Markdown Parse Snippet Tests](lab-report-4-week-8.html) | Covers comparison between two different implementations of the markdown parse program, and adds some JUnit tests to run them with. |
+| [CommonMark Testing](lab-report-5-week-10.html) | Testing two different markdown-parse implementations with commonmark-spec tests. |
 
 ## Commands
 
